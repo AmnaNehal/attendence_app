@@ -1,0 +1,102 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+h1 {
+    font-size: 28px;
+    color: #333;
+    margin-top: 20px;
+}
+
+/* Form Container */
+#classForm, #container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Labels */
+label {
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #555;
+}
+
+/* Form Inputs */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Signup Button */
+#signup-btn, #create, #read, #update, #delete, #created, #readed, #updated, #deleted {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+/* Signup Button Hover Effect */
+#signup-btn:hover, #create:hover, #read:hover, #update:hover, #delete:hover, #created:hover, #readed:hover, #updated:hover, #deleted:hover {
+    background-color: #0056b3;
+}
+
+/* Link */
+a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Link Hover Effect */
+a:hover {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    #classForm, #container {
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 24px;
+    }
+    label {
+        font-size: 14px;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    select {
+        font-size: 14px;
+    }
+    #signup-btn, #create, #read, #update, #delete, #created, #readed, #updated, #deleted {
+        font-size: 16px;
+    }
+}
+

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Session With Firebase</title>
+    <link rel="stylesheet" href="css/student.css">
+</head>
+<body>
+    <h1>Class CRUD</h1>
+
+    <form id="classForm">
+        <!-- Dropdown for Class Timings -->
+        <label for="classTimings">Class Timings:</label>
+        <select id="classTimings" name="classTimings">
+            <option value="9 to 12 Am">Morning</option>
+            <option value="12 to 2 pm ">Afternoon</option>
+            <option value="9 to 11 pm">Evening</option>
+        </select><br><br>
+
+        <!-- Dropdown for Schedule of Classes -->
+        <label for="schedule">Schedule of Classes:</label>
+        <select id="schedule" name="schedule">
+            <option value="monday">Monday</option>
+            <option value="tuesday">Tuesday</option>
+            <option value="thursday">Thursday</option>
+             <option value="wednesday">Wednesday</option>
+             <option value="saturday">Saturday</option>
+             <option value="sunday">Sunday</option>
+            <!-- Add more options here -->
+        </select><br><br>
+
+        <!-- Dropdown for Teacher's Name -->
+        <label for="teacherName">Teacher's Name:</label>
+        <select id="teacherName" name="teacherName">
+            <option value="teacher1">Hina</option>
+            <option value="teacher2">Hira</option>
+            <!-- Add more options here -->
+        </select><br><br>
+
+        <!-- Dropdown for Section Name -->
+        <label for="sectionName">Section Name:</label>
+        <select id="sectionName" name="sectionName">
+            <option value="sectionA">Section A</option>
+            <option value="sectionB">Section B</option>
+            <!-- Add more options here -->
+        </select><br><br>
+
+        <!-- Dropdown for Course Name -->
+        <label for="courseName">Course Name:</label>
+        <select id="courseName" name="courseName">
+            <option value="math">Web development</option>
+            <option value="science">metaverse</option>
+            <!-- Add more options here -->
+        </select><br><br>
+
+        <!-- Dropdown for Batch Numbers -->
+        <label for="batchNumber">Batch Number:</label>
+        <select id="batchNumber" name="batchNumber">
+            <option value="batch1">Batch 1</option>
+            <option value="batch2">Batch 2</option>
+            <!-- Add more options here -->
+        </select><br><br>
+        <div id="buttons"> 
+            <button id="create">Create</button>
+            <button id="read">Read</button>
+            <button id="update">Update</button>
+            <button id="delete">Delete</button>
+        </div>
+    
+    <div id="container">
+         <h2>CRUD Operations With Firebase</h2> 
+        <hr> 
+     
+         <div id="form"> 
+           Name:&nbsp;&nbsp; <input type="text" name="name" id="Stud_name" minlength="3" maxlength="10"><br><br>
+           Father Name:&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" name="name" id="father_name" minlength="3" maxlength="10"><br><br>
+           Roll Number:&nbsp;&nbsp; <input type="text" name="rollNo." id="rollno" pattern="[0-9]{10}"><br><br>
+           Contact Number:&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" name="name" id="contact"><br><br>
+           CNIC Number: <input type="text" name="address" id="cnic" pattern="[0-9]{10}"><br><br>           
+           Picture:&nbsp;&nbsp;&nbsp;&nbsp;  <input type="file" id="image"><br><br><br>
+           <img src="" alt="uploadPhoto" id="myimg"><br><br><br>
+           Admin Asigning class:<input type="text" name="address" id="asign"><br><br>
+        </div> 
+         <label for="courses">Select a Course:</label>
+         <select id="courses"> 
+            <option value="Web & Development">Web & Development</option>
+            <option value="Metaverse">Metaverse</option>
+            <option value="Microsoft">Microsoft</option>
+            <option value="Artificial Intelligence">Artificial Intelligence</option>
+        </select>
+         <div id="buttons"> 
+            <button id="created">Create</button>
+            <button id="readed">Read</button>
+            <button id="updated">Update</button>
+            <button id="deleted">Delete</button>
+        </div>
+    </div>
+   
+
+    <script type="module" src="javascript/auth.js"></script>
+</body>
+</html>

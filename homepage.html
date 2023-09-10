@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Attendance</title>
+    <link rel="stylesheet" href="css/homepage.css">
+</head>
+<body>
+    <h1>Student Attendance</h1>
+    <button><a href="login.html">Logout</a></button>
+    
+    <!-- Input for Roll Number -->
+    <label for="rollNumber">Roll Number:</label>
+    <input type="text" id="rollNumber" placeholder="Enter Roll Number">
+    
+    <!-- Dropdown for Attendance Status -->
+    <label for="attendanceStatus">Attendance Status:</label>
+    <select id="attendanceStatus">
+        <option value="Present">Present</option>
+        <option value="Absent">Absent</option>
+        <option value="Late">Late</option>
+        <option value="Leave">Leave</option>
+    </select>
+    
+    <!-- Admin Password (only required for changing late status or approving leave/absence) -->
+    <label for="adminPassword">Admin Password:</label>
+    <input type="password" id="adminPassword" placeholder="Enter Admin Password">
+    
+    <!-- Button to Submit Attendance -->
+    <button id="submitAttendance">Submit Attendance</button>
+    
+    <!-- Display Area for Student Statistics -->
+    <div id="studentStatistics">
+        <h2>Student Statistics</h2>
+        <p id="attendanceHistory">Attendance History:</p>
+    </div>
+    
+   
+    <script src="javascript/auth.js"></script>
+</body>
+</html>

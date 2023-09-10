@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/signup.css">
+    
+</head>
+<body>
+    <h1 id="h1">Signup </h1>
+    <label for="firstName" minlength="3" maxlength="20" >First Name</label><br>
+    <input type="text" id="firstname"><br>
+    <label for="lastName">Last Name</label><br>
+    <input type="text" id="lastname" minlength="1" maxlength="20"  ><br>
+    <label for="email">Email</label><br>
+    <input type="email" id="signup_email" name="email" required ><br>
+    <label for="password">Password</label><br>
+    <input type="password" id="signup_password" name="password" minlength="8" maxlength="12" pattern="^(?=.*\d)(?=.*[A-Z](?=.*[a-z].{8,12}$))" required><br>
+    <label for="password">Repeat Password</label><br>
+    <input type="password" id="signup_repeatpassword" name="repeatpassword" minlength="8" maxlength="12" pattern="^(?=.*\d)(?=.*[A-Z](?=.*[a-z].{8,12}$))" required><br>
+    <!-- //<input type="file" id="image"><br> -->
+    <a href="login.html"> Already have an account!</a><br><br>
+    <!-- <img src="" alt="uploadPhoto" id="myimg"> -->
+    <button id="signup-btn">Signup</button>
+
+
+    
+    <script type="module" src="javascript/auth.js"></script>
+</body>
+</html>
